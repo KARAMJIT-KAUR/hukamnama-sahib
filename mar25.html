@@ -1,118 +1,288 @@
 <!DOCTYPE html>
 <html lang="pa">
 <head>
-  <meta charset="UTF-8">
-  <title>Hukamnama Sahib - 2 Jan 2025</title>
-  <style>
-    .hukamnama-date {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: right;
-      margin-bottom: 15px;
-      padding: 10px 20px;
-      color: #222;
-      direction: ltr;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'GurbaniAkhar', serif;
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hukamnama-container {
-      border: 10px double brown;
-      padding: 20px;
-      background: white;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .translation {
-      display: none;
-    }
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    .label-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #a55454;
-      color: white;
-      margin: 5px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    #punjabi:checked ~ .punjabi,
-    #english:checked ~ .english {
-      display: block;
-    }
-
-    .section {
-      margin-top: 20px;
-    }
-
-    audio {
-      margin-top: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ਨਾਨਕਸ਼ਾਹੀ ਕੈਲੰਡਰ -ਫ਼ਰਵਰੀ  2024</title>
+    <style>
+      .event-label {
+        display: block;
+        cursor: pointer;
+        color: inherit;
+      }
+      
+      .event-checkbox {
+        display: none;
+      }
+      
+      .event-text {
+        display: none;
+        color: #a55454 ;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      
+      .event-checkbox:checked + .event-text {
+        display: block; }  
+      table, th, td {
+        border: 1px solid black;
+      }
+      table {
+        border-spacing: 30px;
+      }
+        table, th, td {
+            border: 1px solid rgb(243, 228, 228);
+            border-collapse: collapse;
+          }
+        * {
+            box-sizing: border-box;
+          }
+          
+          .row {
+            display: flex;
+          }
+          
+    
+            * {
+              box-sizing: border-box;
+            }
+            
+            /* Create three equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 33.33%;
+              padding: 10px;
+              height: 300px; /* Should be removed. Only for demonstration */
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+        @font-face {
+            font-family: 'GurbaniAkhar';
+            src: url('GurbaniAkhar.ttf');
+        }
+        body {
+            font-family: 'GurbaniAkhar', Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+        }
+        .calendar-container {
+            width: 90%;
+            margin: auto;
+            border: 3px solid black;
+            padding: 10px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sub-header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .day-name {
+         
+              background-color: #a55454 ;
+              color: white;
+              font-weight: bold;
+        }
+        .nanakshahi-date {
+            font-size: 16px;
+            color: black;
+        }
+         
+        .calendar-footer {
+          display: flex;
+          justify-content: space-around;
+          background-color: #fff;
+          border-top: 1px solid #ccc;
+          padding: 10px 0;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          z-index: 1000;
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer-button {
+          background: none;
+          border: none;
+          font-size: 14px;
+          color: #a55454;
+          text-align: center;
+          font-weight: bold;
+          flex: 1;
+        }
+        
+        .footer-button i {
+          font-size: 20px;
+          margin-bottom: 4px;
+          display: block;
+        } .sikh-history-icon {
+          width: 20px; /* Adjust the size as needed */
+          height: auto;
+          margin-bottom: 4px; /* Space between icon and text */
+        }
+        
+        /* Optional: Hover effect */
+        .footer-button:hover {
+          color: #ffcc00; /* Change text color on hover */
+        }
+    </style>
 </head>
 <body>
 
-  <div class="hukamnama-container">
-   
-    <h2>ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥</h2>
+    <div class="row">
+        <tr>
+        
+        <div class="column" style="background-color:#a55454 ;" width="34000" height="30">
+          <h2 style="color:rgb(239, 236, 252)" style="text-align:left ;" >ਸੰਮਤ ਬਿਕ੍ਰਮੀ 2081-82</p></h2>
+          <h2  style="color:rgb(239, 236, 252)"style="text-align:left ;">ਸੰਮਤ ਖ਼ਾਲਸਾ 326</h2>
+          <h2   style="color:rgb(239, 236, 252)"style="text-align:left ;">ਸੰਮਤ ਸ਼ਾਕਾ 1946-47</h2>
+          <h2   style="color:rgb(239, 236, 252)"style="text-align:left ;">ਸੰਮਤ ਹਿਜਰੀ  1446</h2>
+    
+          
+          
+        </div>
+        <div class="column" style="background-color:#a55454 ;;">
+          <h2  style="color:rgb(239, 236, 252)"style="text-align:center;">ਨਾਨਕਸ਼ਾਹੀ ਕੈਲੰਡਰ   ਮਾਰਚ-2025<br><br>March-2025</h2>
+          <h2  style="color:rgb(239, 236, 252)"style="text-align:center ;">ਫੱਗਣ-ਚੇਤਰ
+            (Nanakshahi Samvat 556)</h2>
+         
+        
+      </div>
+        <div class="column" style="background-color:#a55454 ;;">
+            <h2  style="color:rgb(239, 236, 252)"style="text-align:right ;">ਸੰਗਰਾਂਦ 14 ਮਾਰਚ </h2>
+            <h2 style="color:rgb(239, 236, 252)" style="text-align:right ;">ਪੂਰਨਮਾਸ਼ੀ 14 ਮਾਰਚ</h2>
+            <h2  style="color:rgb(239, 236, 252)"style="text-align:right ;">ਮੱਸਿਆ 29 ਮਾਰਚ</h2>
+            <h2  style="color:rgb(239, 236, 252)"style="text-align:right ;">ਪੰਚਮੀ 4 ਮਾਰਚ</h2></h2>
+            <h2  style="color:rgb(239, 236, 252)"style="text-align:right ;">ਦਸਮੀ 9 ਮਾਰਚ</h2></h2>
+          
+        </div></div></tr>
+        <div class="row">
+            <div class="column">
+              <div class="header"style="background-color:#a55454;">
+            </h2><img src="sikh 3.jpg" width="480" height="400"><span class="nanakshahi-date"></span></div></h2>
+             
+            </div>
+        <table class="calendar">
 
-    <!-- Language Toggle Buttons -->
-    <input type="radio" name="lang" id="punjabi" checked>
-    <input type="radio" name="lang" id="english">
+            <table class="calendar" style="width:34000%" height="40">
+            <tr>
+                <th class="day-name">ਐਤ<br>(SUN)</th>
+                <th class="day-name">ਸੋਮ<br>(MON)</th>
+                <th class="day-name">ਮੰਗਲ<br>(TUE)</th>
+                <th class="day-name">ਬੁੱਧ<br>(WED)</th>
+                <th class="day-name">ਵੀਰ<br>(THU)</th>
+                <th class="day-name">ਸ਼ੁਕਰ<br>(FRI)</th>
+                <th class="day-name">ਸ਼ਨੀ<br>(SAT)</th>
+            </tr>
 
-    <label for="punjabi" class="label-btn">ਪੰਜਾਬੀ</label>
-    <label for="english" class="label-btn">English</label>
+           
 
-    <!-- Punjabi Section -->
-    <div class="translation punjabi section"> <div class="hukamnama-date">
-      ਤਾਰੀਖ਼: 25 ਮਾਰਚ  2025
-    </div>
-      <p><strong><span style="color:#a55454;">ਹੁਕਮਨਾਮਾ:</span></strong>
-      <p style="color:rgb(47, 0, 255)">
-        ਸੂਹੀ ਮਹਲਾ ੧ ਘਰੁ ੬ <br>ੴ ਸਤਿਗੁਰ ਪ੍ਰਸਾਦਿ ॥<br> ਉਜਲੁ ਕੈਹਾ ਚਿਲਕਣਾ ਘੋਟਿਮ ਕਾਲੜੀ ਮਸੁ ॥ <br>ਧੋਤਿਆ ਜੂਠਿ ਨ ਉਤਰੈ ਜੇ ਸਉ ਧੋਵਾ ਤਿਸੁ ॥੧॥ <br>ਸਜਣ ਸੇਈ ਨਾਲਿ ਮੈ ਚਲਦਿਆ ਨਾਲਿ ਚਲੰਨਿ੍॥ <br>ਜਿਥੈ ਲੇਖਾ ਮੰਗੀਐ ਤਿਥੈ ਖੜੇ ਦਿਸੰਨਿ ॥੧॥ ਰਹਾਉ ॥<br> ਕੋਠੇ ਮੰਡਪ ਮਾੜੀਆ ਪਾਸਹੁ ਚਿਤਵੀਆਹਾ ॥ <br>ਢਠੀਆ ਕੰਮਿ ਨ ਆਵਨੀ੍ ਵਿਚਹੁ ਸਖਣੀਆਹਾ ॥੨॥ <br>ਬਗਾ ਬਗੇ ਕਪੜੇ ਤੀਰਥ ਮੰਝਿ ਵਸੰਨਿ੍ ॥ <br>ਘੁਟਿ ਘੁਟਿ ਜੀਆ ਖਾਵਣੇ ਬਗੇ ਨਾ ਕਹੀਅਨਿ੍ ॥੩॥<br> ਸਿੰਮਲ ਰੁਖੁ ਸਰੀਰੁ ਮੈ ਮੈਜਨ ਦੇਖਿ ਭੁਲੰਨਿ੍॥ <br>ਸੇ ਫਲ ਕੰਮਿ ਨ ਆਵਨੀ੍ ਤੇ ਗੁਣ ਮੈ ਤਨਿ ਹੰਨਿ੍ ॥੪॥ <br>ਅੰਧੁਲੈ ਭਾਰੁ ਉਠਾਇਆ ਡੂਗਰ ਵਾਟ ਬਹੁਤੁ ॥<br> ਅਖੀ ਲੋੜੀ ਨਾ ਲਹਾ ਹਉ ਚੜਿ ਲੰਘਾ ਕਿਤੁ ॥੫॥ <br>ਚਾਕਰੀਆ ਚੰਗਿਆਈਆ ਅਵਰ ਸਿਆਣਪ ਕਿਤੁ ॥<br> ਨਾਨਕ ਨਾਮੁ ਸਮਾਲਿ ਤੂੰ ਬਧਾ ਛੁਟਹਿ ਜਿਤੁ ॥੬॥੧॥੩॥<br>
-      </p>
+            <tr>
+                <td><img src="khanda1.jpg" width="50" height="50"><br> <span class="nanakshahi-date"></span></td>
+                <td><img src="khanda1.jpg" width="50" height="50"> <br> <span class="nanakshahi-date"></span></td>
+                <td><img src="khanda1.jpg" width="50" height="50"><br> <span class="nanakshahi-date"></span></td>
+                <td> <img src="khanda1.jpg" width="50" height="50"><br> <span class="nanakshahi-date"></span></td>
+                <td> <img src="khanda1.jpg" width="50" height="50"><br> <span class="nanakshahi-date"></span></td>
+                <td><img src="khanda1.jpg" width="50" height="50"> <br> <span class="nanakshahi-date"></span></td>
+                <td>1 <br> <span class="nanakshahi-date">18 ਫੱਗਣ</span></td>
+            </tr>
 
-      <p><strong><span style="color:#a55454;">ਅਰਥ:</span></strong><p></p> 
-      ਰਾਗ ਸੂਹੀ, ਘਰ ੬ ਵਿੱਚ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਦੀ ਬਾਣੀ। ਅਕਾਲ ਪੁਰਖ ਇੱਕ ਹੈ ਅਤੇ ਸਤਿਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨਾਲ ਮਿਲਦਾ ਹੈ। ਮੈਂ ਕੈਂਹ (ਦਾ) ਸਾਫ਼ ਤੇ ਲਿਸ਼ਕਵਾਂ (ਭਾਂਡਾ) ਘਸਾਇਆ (ਤਾਂ ਉਸ ਵਿਚੋਂ) ਮਾੜੀ ਮਾੜੀ ਕਾਲੀ ਸਿਆਹੀ (ਲੱਗ ਗਈ)। ਜੇ ਮੈਂ ਸੌ ਵਾਰੀ ਭੀ ਉਸ ਕੈਂਹ ਦੇ ਭਾਂਡੇ ਨੂੰ ਧੋਵਾਂ (ਸਾਫ਼ ਕਰਾਂ) ਤਾਂ ਭੀ (ਬਾਹਰੋਂ) ਧੋਣ ਨਾਲ ਉਸ ਦੀ (ਅੰਦਰਲੀ) ਜੂਠ (ਕਾਲਖ) ਦੂਰ ਨਹੀਂ ਹੁੰਦੀ ॥੧॥ ਮੇਰੇ ਅਸਲ ਮਿੱਤ੍ਰ ਉਹੀ ਹਨ ਜੋ (ਸਦਾ) ਮੇਰੇ ਨਾਲ ਰਹਿਣ, ਤੇ (ਇਥੋਂ) ਤੁਰਨ ਵੇਲੇ ਭੀ ਮੇਰੇ ਨਾਲ ਹੀ ਚੱਲਣ, (ਅਗਾਂਹ) ਜਿਥੇ (ਕੀਤੇ ਕਰਮਾਂ ਦਾ) ਹਿਸਾਬ ਮੰਗਿਆ ਜਾਂਦਾ ਹੈ ਉਥੇ ਅਝੱਕ ਹੋ ਕੇ ਹਿਸਾਬ ਦੇ ਸਕਣ (ਭਾਵ, ਹਿਸਾਬ ਦੇਣ ਵਿਚ ਕਾਮਯਾਬ ਹੋ ਸਕਣ) ॥੧॥ ਰਹਾਉ ॥ ਜੇਹੜੇ ਘਰ ਮੰਦਰ ਮਹਲ ਚੌਹਾਂ ਪਾਸਿਆਂ ਤੋਂ ਤਾਂ ਚਿੱਤਰੇ ਹੋਏ ਹੋਣ, ਪਰ ਅੰਦਰੋਂ ਖ਼ਾਲੀ ਹੋਣ, (ਉਹ ਢਹਿ ਜਾਂਦੇ ਹਨ ਤੇ) ਢੱਠੇ ਹੋਏ ਕਿਸੇ ਕੰਮ ਨਹੀਂ ਆਉਂਦੇ ॥੨॥ ਬਗਲਿਆਂ ਦੇ ਚਿੱਟੇ ਖੰਭ ਹੁੰਦੇ ਹਨ, ਵੱਸਦੇ ਭੀ ਉਹ ਤੀਰਥਾਂ ਉਤੇ ਹੀ ਹਨ। ਪਰ ਜੀਆਂ ਨੂੰ (ਗਲੋਂ) ਘੁੱਟ ਘੁੱਟ ਕੇ ਖਾ ਜਾਣ ਵਾਲੇ (ਅੰਦਰੋਂ) ਸਾਫ਼ ਸੁਥਰੇ ਨਹੀਂ ਆਖੇ ਜਾਂਦੇ ॥੩॥ (ਜਿਵੇਂ) ਸਿੰਬਲ ਦਾ ਰੁੱਖ (ਹੈ ਤਿਵੇਂ) ਮੇਰਾ ਸਰੀਰ ਹੈ, (ਸਿੰਬਲ ਦੇ ਫਲਾਂ ਨੂੰ) ਵੇਖ ਕੇ ਤੋਤੇ ਭੁਲੇਖਾ ਖਾ ਜਾਂਦੇ ਹਨ, (ਸਿੰਬਲ ਦੇ) ਉਹ ਫਲ (ਤੋਤਿਆਂ ਦੇ) ਕੰਮ ਨਹੀਂ ਆਉਂਦੇ, ਉਹੋ ਜੇਹੇ ਹੀ ਗੁਣ ਮੇਰੇ ਸਰੀਰ ਵਿਚ ਹਨ ॥੪॥ ਮੈਂ ਅੰਨ੍ਹੇ ਨੇ (ਸਿਰ ਉਤੇ ਵਿਕਾਰਾਂ ਦਾ) ਭਾਰ ਚੁੱਕਿਆ ਹੋਇਆ ਹੈ, (ਅਗਾਂਹ ਮੇਰਾ ਜੀਵਨ-ਪੰਧ) ਬੜਾ ਪਹਾੜੀ ਰਸਤਾ ਹੈ। ਅੱਖਾਂ ਨਾਲ ਭਾਲਿਆਂ ਭੀ ਮੈਂ ਰਾਹ-ਖਹਿੜਾ ਲੱਭ ਨਹੀਂ ਸਕਦਾ (ਕਿਉਂਕਿ ਅੱਖਾਂ ਹੀ ਨਹੀਂ ਹਨ। ਇਸ ਹਾਲਤ ਵਿਚ) ਕਿਸ ਤਰੀਕੇ ਨਾਲ (ਪਹਾੜੀ ਤੇ) ਚੜ੍ਹ ਕੇ ਮੈਂ ਪਾਰ ਲੰਘਾਂ ? ॥੫॥ ਹੇ ਨਾਨਕ ਜੀ! (ਪਹਾੜੀ ਰਸਤੇ ਵਰਗੇ ਬਿਖੜੇ ਜੀਵਨ-ਪੰਧ ਵਿਚੋਂ ਪਾਰ ਲੰਘਣ ਲਈ) ਦੁਨੀਆ ਦੇ ਲੋਕਾਂ ਦੀਆਂ ਖ਼ੁਸ਼ਾਮਦਾਂ, ਲੋਕ-ਵਿਖਾਵੇ ਤੇ ਚਲਾਕੀਆਂ ਕਿਸੇ ਕੰਮ ਨਹੀਂ ਆ ਸਕਦੀਆਂ। ਪਰਮਾਤਮਾ ਦਾ ਨਾਮ (ਆਪਣੇ ਹਿਰਦੇ ਵਿਚ) ਸਾਂਭ ਕੇ ਰੱਖ। (ਮਾਇਆ ਦੇ ਮੋਹ ਵਿਚ) ਬੱਝਾ ਹੋਇਆ ਤੂੰ ਇਸ ਨਾਮ (-ਸਿਮਰਨ) ਦੀ ਰਾਹੀਂ ਹੀ (ਮੋਹ ਦੇ ਬੰਧਨਾਂ ਤੋਂ) ਖ਼ਲਾਸੀ ਪਾ ਸਕੇਂਗਾ ॥੬॥੧॥੩॥</p>   
-      </p>
+            <tr>
+                <td>2<br> <span class="nanakshahi-date">19 ਫੱਗਣ</span></td>
+                <td>3 <br> <span class="nanakshahi-date">20 ਫੱਗਣ</span></td>
+                <td>
+                  <label class="event-label" style="color:rgb(196, 66, 66)">
+                    4<br> <span class="nanakshahi-date">21 ਫੱਗਣ</span>
+                    <input type="checkbox" class="event-checkbox">
+                    <div class="event-text">ਪੰਚਮੀ</div>
+                  </label></td>
+                <td>5 <br> <span class="nanakshahi-date">22 ਫੱਗਣ</span></td>
+                <td>6 <br> <span class="nanakshahi-date">23 ਫੱਗਣ</span></td>
+                <td>7 <br> <span class="nanakshahi-date">24 ਫੱਗਣ</span></td>
+                <td>8 <br> <span class="nanakshahi-date">25 ਫੱਗਣ</span></td>
+            </tr>
 
-      <audio controls>
-        <source src="pbi mar 25.mp3" type="audio/mpeg">
+            <tr>
+              <td>
+                <label class="event-label" style="color:rgb(196, 66, 66)">
+                  9<br> <span class="nanakshahi-date">26 ਫੱਗਣ</span>
+                  <input type="checkbox" class="event-checkbox">
+                  <div class="event-text">ਦਸਮੀ </div>
+                </label></td>
+                <td>10 <br> <span class="nanakshahi-date">27 ਫੱਗਣ </span></td>
+                <td>11 <br> <span class="nanakshahi-date">28 ਫੱਗਣ</span></td>
+                <td>12 <br> <span class="nanakshahi-date">29 ਫੱਗਣ</span></td>
+                <td>13 <br> <span class="nanakshahi-date">30 ਫੱਗਣ</span></td>
+                <td>
+                  <label class="event-label" style="color:rgb(196, 66, 66)">
+                    14<br> <span class="nanakshahi-date">1 ਚੇਤਰ</span>
+                    <input type="checkbox" class="event-checkbox">
+                    <div class="event-text">ਸੰਗਰਾਂਦ<br>ਪੂਰਨਮਾਸ਼ੀ </div>
+                  </label></td> 
+                <td>15 <br> <span class="nanakshahi-date">2 ਚੇਤਰ</span></td>
+            </tr>
+
+            <tr>
+                <td>16<br> <span class="nanakshahi-date">3 ਚੇਤਰ</span></td>
+                <td>17 <br> <span class="nanakshahi-date">4 ਚੇਤਰ</span></td>
+                <td>18 <br> <span class="nanakshahi-date">5 ਚੇਤਰ </span></td>
+                <td>19 <br> <span class="nanakshahi-date">6 ਚੇਤਰ</span></td>
+                <td>20 <br> <span class="nanakshahi-date">7 ਚੇਤਰ</span></td>
+                <td>21 <br> <span class="nanakshahi-date">8 ਚੇਤਰ</span></td>
+                <td>22<br> <span class="nanakshahi-date">9 ਚੇਤਰ</span></td>
+                </tr>
+
+                <tr>
+                <td>23</p> <br> <span class="nanakshahi-date">10 ਚੇਤਰ </span></td>
+                <td>24 <br> <span class="nanakshahi-date">11 ਚੇਤਰ </span></td>
+                <td>25 <br> <span class="nanakshahi-date">12 ਚੇਤਰ</span></td>
+                <td>26 <br> <span class="nanakshahi-date">13 ਚੇਤਰ</span></td>
+                <td>27 <br> <span class="nanakshahi-date">14 ਚੇਤਰ</span></td>
+                <td>28 <br> <span class="nanakshahi-date">15 ਚੇਤਰ</span></td>
+                <td>
+                  <label class="event-label" style="color:rgb(196, 66, 66)">
+                    29<br> <span class="nanakshahi-date">16 ਚੇਤਰ</span>
+                    <input type="checkbox" class="event-checkbox">
+                    <div class="event-text">ਮੱਸਿਆ</div>
+                  </label></td>  </tr>
+                <tr>
+                <td>30<br> <span class="nanakshahi-date">17 ਚੇਤਰ</span></td>
+                <td>31 <br> <span class="nanakshahi-date">18 ਚੇਤਰ</span></td>
+                <td colspan="5"></td>
+            </tr>
+        </table>
+    </div></div><br><br><br><br>
+    <div class="calendar-footer">
+      <button class="footer-button" onclick="location.href='chaar.html'">
+        <img src="ik.jpg" alt="Sikh History Icon" class="ik onkar-icon" width="20" height="15"><br>Chaar Sahibzaade
+      </button>
+      </button>
+      <button class="footer-button" onclick="location.href='march 25 fes.html'">
+        <img src="event.jpg" alt="Sikh History Icon" class="sikh-history-icon"><br>Festivals
+      </button>
+      <button class="footer-button" onclick="location.href='sikhhistory.html'">
+        <img src="khanda1.jpg" alt="Sikh History Icon" class="sikh-history-icon"><br>Sikh History
+      </button>
       
-      </audio>
     </div>
-
-    <!-- English Section -->
-    <div class="translation english section"> <div class="hukamnama-date">
-      Date : 25 March 2025
-    </div>
-      <p><strong><span style="color:#a55454;">Hukamnama:</span></strong></p>
-      <p style="color:rgb(47, 0, 255)">
-      
-        Soohee Mahalaa 1 Ghar 6<br> Ik Oankaar Satgur Parsaad ||<br> Ujal Kaihaa Chilkanaa Ghottim Kaalrree Mas || <br>Dhhoteaa Jooth N Utrai Je Sau Dhhovaa Tis ||1|| <br>Sajan Se_ee Naal Mai Chaldeaa Naal Chalann || <br>Jithhai Lekhaa Mangeeai Tithhai Kharre Disann ||1|| Rahaau ||<br> Kothe Manddap Maarreeaa Paasahu Chitveeaahaa ||<br> Ddhatheeaa Kam N Aavnhee Vichahu Sakhneeaahaa ||2||<br> Bagaa Bage Kaprre Teerathh Manjh Vasann || <br>Ghutt Ghutt Jeeaa Khaavne Bage Naa Kaheean ||3||<br> Simal Rukh Sareer Mai Maijan Dekh Bhulann ||<br> Se Fal Kam N Aavanhee Te Gun Mai Tan Hann ||4||<br> Andhhulai Bhaar Uthaaeaa Ddoogar Vaatt Bahut ||<br> Akhee Lorree Naa Lahaa Hau Charr Langhaa Kit ||5||<br> Chaakreeaa Changeaaeeaa Avar Syaanap Kit ||<br> Naanak Naam Samaal Tooñ Badhhaa Shhutteh Jit ||6||1||3||<br>
-<p><strong><p style="color:#a55454;">Explanation:</strong></p>
-Soohee, First Mahalaa, Sixth House: One Universal Creator God. By The Grace Of The True Guru: Bronze is bright and shiny, but when it is rubbed, its blackness appears. Washing it, its impurity is not removed, even if it is washed a hundred times. ||1|| They alone are my friends, who travel along with me; And in that place, where the accounts are called for, they appear standing with me. ||1|| Pause || There are houses, mansions and tall buildings, painted on all sides; But they are empty within, and they crumble like useless ruins. ||2|| The herons in their white feathers dwell in the sacred shrines of pilgrimage. They tear apart and eat the living beings, and so they are not called white. ||3|| My body is like the simmal tree; seeing me, other people are fooled. Its fruits are useless – just like the qualities of my body. ||4|| The blind man is carrying such a heavy load, and his journey through the mountains is so long. My eyes can see, but I cannot find the Way. How can I climb up and cross over the mountain ? ||5|| What good does it do to serve, and be good, and be clever ? O Nanak Ji, contemplate the Naam, the Name of the Lord, and you shall be released from bondage. ||6||1||3||
-</p>
-<audio controls>
-
-  <source src="eng mar 25.mp3" type="audio/mpeg">
-  
-</audio>
-</div>
-
-
-     
-       
+</body>
+</html>
